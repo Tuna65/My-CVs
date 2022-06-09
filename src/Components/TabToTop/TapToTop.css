@@ -1,0 +1,22 @@
+.t-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    left: 92%;
+    top: 85%;
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--orange);
+    border: 3px solid var(--orange);
+    font-size: 2rem;
+    font-weight: 600;
+    display: none;
+    z-index: 2;
+}
+
+@media (max-width: 480px) {
+    .t-button {
+        left: 82%;
+    }
+}

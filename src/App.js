@@ -1,25 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import './Grid/grid.css';
+import Header from './Components/header/Header';
+import Info from './Components/Info/Info';
+import Skill from './Components/Skill/Skill';
+import Portlofio from './Components/Portfolio/Portfolio';
+import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
+import { useContext } from 'react';
+import { ThemeContext } from './Context';
+import TapToTop from './Components/TabToTop/TapToTop';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const theme = useContext(ThemeContext);
+
+    const darkMode = theme.state.darkMode;
+    return (
+        <div className="App" style={{ backgroundColor: darkMode ? 'black' : '', color: darkMode ? 'white' : '' }}>
+            <div className="container">
+                <Header />
+                <Info />
+                <Skill />
+                <Portlofio />
+                <Contact />
+            </div>
+            <TapToTop />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;

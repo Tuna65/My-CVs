@@ -1,0 +1,56 @@
+import Card from '../Card/Card';
+import './Skill.css';
+import glass from '../../img/glassesimoji.png';
+import heart from '../../img/heartemoji.png';
+import humble from '../../img/humble.png';
+import { motion } from 'framer-motion';
+import CV from './cv.txt';
+
+function Skill() {
+    const transition = { duration: 2, type: 'spring' };
+
+    return (
+        <div className="s-wrapper grid" id="Skill">
+            <div className="row">
+                <div className="col s-left l-6 c-12">
+                    <h1>My Skill</h1>
+                    <h2>Certificate</h2>
+                    <span>
+                        Hoàn thành lộ trình học Front-End trên F8 gồm: HTML, CSS, Responsive, JavaScrip (ES6), ReactJS
+                    </span>
+                    <a href={CV} download>
+                        <button className="button s-button">Download CV</button>
+                    </a>
+                </div>
+                <div className="s-right col l-6 c-12">
+                    <motion.div initial={{ left: '0%' }} whileInView={{ left: '15%' }} transition={transition}>
+                        <Card
+                            emoji={glass}
+                            title={'HTML, CSS, Bootstrap'}
+                            content={'Thành thạo các kỹ năng về HTML, CSS, xử lý web Responsive'}
+                        />
+                    </motion.div>
+                    <motion.div initial={{ left: '12%' }} whileInView={{ left: '13%' }} transition={transition}>
+                        <Card
+                            emoji={heart}
+                            title={'Javascripts'}
+                            content={
+                                'Thành thạo các kỹ năng về Javascripts, thao tác mảng, object, DOM, Callback, API(fetch), xử lý Website với API có sẵn'
+                            }
+                        />
+                    </motion.div>
+                    <motion.div initial={{ right: '34%' }} whileInView={{ right: '43%' }} transition={transition}>
+                        <Card
+                            emoji={humble}
+                            title={'Frame Work: ReactJS'}
+                            content={'Hiểu và biết các sử dụng Router, Hooks'}
+                        />
+                    </motion.div>
+                    <span className="s-blur"></span>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default Skill;

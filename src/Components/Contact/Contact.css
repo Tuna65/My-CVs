@@ -1,0 +1,109 @@
+.ct-wrapper {
+    margin-top: 20rem;
+    padding-top: 30px;
+    width: 100%;
+    position: relative;
+}
+
+.ct-wrapper::before {
+    content: '';
+    position: absolute;
+    left: 80%;
+    bottom: 10%;
+    width: 30rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: #9d00ff;
+    filter: blur(212px);
+    z-index: -1;
+}
+
+.ct-wrapper::after {
+    content: '';
+    position: absolute;
+    left: 19%;
+    top: -30%;
+    width: 30rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: #00bfff;
+    filter: blur(212px);
+    z-index: -1;
+}
+
+.ct-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.ct-left > :nth-child(1) {
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+.ct-left > :nth-child(2) {
+    font-size: 5rem;
+    color: var(--orange);
+}
+.ct-left > :nth-child(3) {
+    font-size: 2.5rem;
+    color: var(--text2);
+    margin-top: 12px;
+}
+/* ============================ */
+
+.ct-form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.ct-form > :nth-child(1),
+.ct-form > :nth-child(3),
+.ct-form > :nth-child(5),
+.ct-form > :nth-child(8) {
+    border: 4px solid var(--orange);
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 1.8rem;
+    outline: none;
+    max-width: 100%;
+}
+
+.ct-form > input ::placeholder {
+    color: var(--text2);
+    font-weight: 600;
+}
+
+.ct-button {
+    width: 120px;
+    margin: auto;
+    border-radius: 40px;
+}
+
+.warning {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 1.8rem;
+    color: var(--orange);
+}
+
+.message {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 1.8rem;
+    color: red;
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    .ct-wrapper::before,
+    .ct-wrapper::after {
+        display: none;
+    }
+
+    .ct-left > :nth-child(3) {
+        font-size: 2rem;
+    }
+}

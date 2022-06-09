@@ -1,0 +1,90 @@
+.s-wrapper {
+    margin-top: 20rem;
+    padding-top: 30px;
+}
+
+.s-left {
+    display: flex;
+    flex-direction: column;
+    line-height: 5.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.s-left > :nth-child(1) {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.s-left > :nth-child(2) {
+    font-size: 4rem;
+    color: var(--orange);
+}
+
+.s-left > :nth-child(3) {
+    display: block;
+    font-size: 1.8rem;
+    color: var(--text2);
+    font-weight: 600;
+}
+
+.s-button {
+    max-width: 170px;
+    margin: auto;
+}
+
+.s-right {
+    position: relative;
+    min-height: 300px;
+}
+
+.s-right > :nth-child(3) {
+    position: absolute;
+    right: 34%;
+    top: 40%;
+}
+
+.s-right > :nth-child(2) {
+    position: absolute;
+    left: 12%;
+    bottom: 0%;
+}
+
+.s-right > :nth-child(1) {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+.s-blur {
+    display: block;
+    position: absolute;
+    bottom: -40rem;
+    width: 30rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: #9d00ff;
+    filter: blur(212px);
+    z-index: -1;
+}
+
+@media (max-width: 480px) {
+    .s-wrapper {
+        margin-top: 0;
+        padding-top: 10px;
+    }
+    .s-right {
+        display: flex;
+        flex-direction: column;
+    }
+    .s-right > :nth-child(1),
+    .s-right > :nth-child(2),
+    .s-right > :nth-child(3) {
+        position: static;
+        width: 100%;
+    }
+
+    .s-blur {
+        display: none;
+    }
+}

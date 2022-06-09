@@ -9,6 +9,8 @@ function Contact() {
     const txtEmail = useRef();
     const txtMessage = useRef();
 
+    const [controlSend, setControlSend] = useState(0);
+
     const [nameValue, setNameValue] = useState('');
     const [email, setEmail] = useState('');
     const [content, setContent] = useState('');
@@ -52,7 +54,17 @@ function Contact() {
             txtEmail.current.innerText === ''
         ) {
             warning.current.innerText = 'Thanks for your feedback';
+            setControlSend(controlSend + 1);
         } else e.preventDefault();
+
+        if (controlSend > 3) {
+            e.preventDefault();
+            warning.current.innerText = 'You send to many mail! Please wait after 3min';
+            warning.current.style.color = 'red';
+            setTimeout(() => {
+                setControlSend(0);
+            }, 180000);
+        }
 
         setTimeout(() => {
             warning.current.innerText = '';

@@ -57,7 +57,7 @@ function Contact() {
             setControlSend(controlSend + 1);
         } else e.preventDefault();
 
-        if (controlSend > 3) {
+        if (controlSend > 2) {
             e.preventDefault();
             warning.current.innerText = 'You send to many mail! Please wait after 3min';
             warning.current.style.color = 'red';
@@ -74,7 +74,7 @@ function Contact() {
             setContent('');
             setEmail('');
             setNameValue('');
-        }, 3000);
+        }, 2000);
     };
 
     return (

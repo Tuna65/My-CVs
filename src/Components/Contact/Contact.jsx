@@ -15,7 +15,7 @@ function Contact() {
     const [email, setEmail] = useState('');
     const [content, setContent] = useState('');
 
-    //================================================================
+    //=========================
     const sendEmail = (e) => {
         e.preventDefault();
 

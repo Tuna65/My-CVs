@@ -7,7 +7,6 @@ import './TapToTop.css';
 
 function TapToTop() {
     document.onscroll = function () {
-        console.log(window.scrollY);
         if (window.scrollY > 800) {
             document.querySelector('.t-button').style.display = 'block';
         } else document.querySelector('.t-button').style.display = 'none';

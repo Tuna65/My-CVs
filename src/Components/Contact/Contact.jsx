@@ -43,9 +43,9 @@ function Contact() {
     }
 
     const handleOnclick = (e) => {
-        check(txtName, nameValue, 'Please tell me your name');
-        check(txtMessage, content, 'what do you want to talk with me');
-        check(txtEmail, email, 'Please tell me your email', 'here must enter email');
+        check(txtName, nameValue, 'Hãy cho tôi biết tên của bạn.');
+        check(txtMessage, content, 'Bạn muối nói gì với tôi.');
+        check(txtEmail, email, 'Tôi cần biết email của bạn.', 'Bạn vừa nhập không phải email.');
 
         //================================================================
         if (

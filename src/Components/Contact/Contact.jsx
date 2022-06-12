@@ -43,9 +43,9 @@ function Contact() {
     }
 
     const handleOnclick = (e) => {
-        check(txtName, nameValue, 'Hãy cho tôi biết tên của bạn.');
-        check(txtMessage, content, 'Bạn muối nói gì với tôi.');
-        check(txtEmail, email, 'Tôi cần biết email của bạn.', 'Bạn vừa nhập không phải email.');
+        check(txtName, nameValue, 'Please tell me your name');
+        check(txtMessage, content, 'what do you want to talk with me');
+        check(txtEmail, email, 'Please tell me your email', 'here must enter email');
 
         //================================================================
         if (
@@ -53,13 +53,13 @@ function Contact() {
             txtMessage.current.innerText === '' &&
             txtEmail.current.innerText === ''
         ) {
-            warning.current.innerText = 'Cảm ơn bạn đã phản hồi cho tôi';
+            warning.current.innerText = 'Thanks for your feedback';
             setControlSend(controlSend + 1);
         } else e.preventDefault();
 
         if (controlSend > 2) {
             e.preventDefault();
-            warning.current.innerText = 'Bạn vừa gửi quá nhiều mail! Vui lòng chờ 3min để có thể gửi lại.';
+            warning.current.innerText = 'You send to many mail! Please wait after 3min';
             warning.current.style.color = 'red';
             setTimeout(() => {
                 setControlSend(0);

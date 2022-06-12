@@ -53,13 +53,13 @@ function Contact() {
             txtMessage.current.innerText === '' &&
             txtEmail.current.innerText === ''
         ) {
-            warning.current.innerText = 'Thanks for your feedback';
+            warning.current.innerText = 'Cảm ơn bạn đã phản hồi cho tôi';
             setControlSend(controlSend + 1);
         } else e.preventDefault();
 
         if (controlSend > 2) {
             e.preventDefault();
-            warning.current.innerText = 'You send to many mail! Please wait after 3min';
+            warning.current.innerText = 'Bạn vừa gửi quá nhiều mail! Vui lòng chờ 3min để có thể gửi lại.';
             warning.current.style.color = 'red';
             setTimeout(() => {
                 setControlSend(0);

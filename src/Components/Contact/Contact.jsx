@@ -91,7 +91,7 @@ function Contact() {
                         <input
                             type="text"
                             name="user_name"
-                            placeholder="Name"
+                            placeholder="Your Name"
                             onChange={(e) => {
                                 setNameValue(e.target.value);
                             }}
@@ -106,7 +106,7 @@ function Contact() {
                         <input
                             type="email"
                             name="user_email"
-                            placeholder="Email"
+                            placeholder="Your Email"
                             onChange={(e) => setEmail(e.target.value)}
                             onFocus={() => {
                                 txtEmail.current.innerText = '';

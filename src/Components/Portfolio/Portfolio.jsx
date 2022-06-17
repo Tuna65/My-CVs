@@ -12,6 +12,7 @@ import lecatering from '../../img/leCatering.jpg';
 import myfood from '../../img/myfood.jpg';
 import portlofio from '../../img/portfolio.jpg';
 import social from '../../img/socialMedia.jpg';
+import ReactJS from './ReactJS/ReactJS';
 
 const projects = [
     {
@@ -67,7 +68,7 @@ function Portlofio() {
     return (
         <div className="p-wrapper" id="Project">
             <h3>All Project</h3>
-            <h2>Portlofio</h2>
+            <h2>HTML-CSS-JS</h2>
             <Swiper
                 slidesPerView={1}
                 spaceBetween={10}
@@ -109,6 +110,7 @@ function Portlofio() {
                     );
                 })}
             </Swiper>
+            <ReactJS />
         </div>
     );
 }

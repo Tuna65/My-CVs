@@ -1,7 +1,7 @@
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Link from 'react-scroll/modules/components/Link';
+import { Link } from 'react-scroll';
 
 import './TapToTop.css';
 

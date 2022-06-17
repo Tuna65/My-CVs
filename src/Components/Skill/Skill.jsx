@@ -30,7 +30,7 @@ function Skill() {
                             content={'Thành thạo các kỹ năng về HTML, CSS, xử lý web Responsive'}
                         />
                     </motion.div>
-                    <motion.div initial={{ left: '12%' }} whileInView={{ left: '13%' }} transition={transition}>
+                    <motion.div initial={{ left: '0%' }} whileInView={{ left: '13%' }} transition={transition}>
                         <Card
                             emoji={heart}
                             title={'Javascripts'}
@@ -39,11 +39,11 @@ function Skill() {
                             }
                         />
                     </motion.div>
-                    <motion.div initial={{ right: '34%' }} whileInView={{ right: '43%' }} transition={transition}>
+                    <motion.div initial={{ top: '80%' }} whileInView={{ top: '40%' }} transition={transition}>
                         <Card
                             emoji={humble}
                             title={'Frame Work: ReactJS'}
-                            content={'Hiểu và biết các sử dụng Router, Hooks'}
+                            content={'Hiểu và sử dụng tốt Router, Hooks(useState, useContext, useEffect'}
                         />
                     </motion.div>
                     <span className="s-blur"></span>

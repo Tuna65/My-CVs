@@ -1,0 +1,50 @@
+.r-wrapper {
+    text-align: center;
+}
+
+.r-wrapper > * {
+    padding: 12px 0;
+}
+
+.r-wrapper > h2 {
+    font-size: 3rem;
+    color: var(--orange);
+}
+
+.react-swiper {
+    width: 33%;
+}
+
+.r-swiper {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 3px solid var(--orange);
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 14px 18px;
+    border-radius: 16px;
+}
+
+.r-swiper > * {
+    margin-bottom: 12px;
+}
+
+.r-swiper > img {
+    width: 100%;
+}
+
+.r-swiper > span {
+    font-size: 1.8rem;
+}
+
+.react-swiper > .swiper-button-prev {
+    color: var(--orange);
+    left: 0px;
+}
+
+.react-swiper > .swiper-button-next {
+    right: 0px;
+    color: var(--orange);
+}

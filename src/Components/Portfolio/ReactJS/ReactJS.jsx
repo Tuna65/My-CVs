@@ -18,17 +18,17 @@ function ReactJS() {
             title: 'Cafe Demo',
             img: img1,
             path: 'https://tuna-cafe-demo-web.netlify.app/',
-            html: '3',
-            css: '27',
-            js: '16',
+            html: '5',
+            css: '45',
+            js: '50',
         },
         {
             title: 'Social',
             img: img2,
             path: 'https://tuna65-cv.netlify.app/',
-            html: '1',
-            css: '27',
-            js: '17',
+            html: '2',
+            css: '35',
+            js: '63',
         },
     ];
     return (

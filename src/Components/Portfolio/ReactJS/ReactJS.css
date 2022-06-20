@@ -48,3 +48,6 @@
     right: 0px;
     color: var(--orange);
 }
+
+@media (min-width: 710px) {
+}

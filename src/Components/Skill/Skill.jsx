@@ -4,7 +4,7 @@ import glass from '../../img/glassesimoji.png';
 import heart from '../../img/heartemoji.png';
 import humble from '../../img/humble.png';
 import { motion } from 'framer-motion';
-import CV from './cv.txt';
+import CV from './CV_Pham_Anh_Tuan_Fron_End_Developer.pdf';
 
 function Skill() {
     const transition = { duration: 2, type: 'spring' };
@@ -26,7 +26,7 @@ function Skill() {
                     <motion.div initial={{ left: '0%' }} whileInView={{ left: '15%' }} transition={transition}>
                         <Card
                             emoji={glass}
-                            title={'HTML, CSS, Bootstrap'}
+                            title={'HTML, CSS, Web Responsive'}
                             content={'Thành thạo các kỹ năng về HTML, CSS, xử lý web Responsive'}
                         />
                     </motion.div>

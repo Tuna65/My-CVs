@@ -11,11 +11,12 @@ import './ReactJS.css';
 
 import img1 from '../../../img/cafe-rjs.jpg';
 import img2 from '../../../img/cv-rjs.jpg';
+import img3 from '../../../img/travel.jpg';
 
 function ReactJS() {
     const projects = [
         {
-            title: 'Cafe Demo',
+            title: 'Cafe-Demo',
             img: img1,
             path: 'https://tuna-cafe-demo-web.netlify.app/',
             html: '5',
@@ -23,12 +24,20 @@ function ReactJS() {
             js: '50',
         },
         {
-            title: 'Social',
+            title: 'My-CV',
             img: img2,
             path: 'https://tuna65-cv.netlify.app/',
             html: '2',
             css: '35',
             js: '63',
+        },
+        {
+            title: 'Travel (Loading...)',
+            img: img3,
+            path: 'https://travel-web-a946f.web.app/',
+            html: '2',
+            css: '48',
+            js: '50',
         },
     ];
     return (
@@ -49,7 +58,7 @@ function ReactJS() {
                                 <h1>{project.title}</h1>
                                 <img src={project.img} alt="" />
                                 <span>
-                                    HTML: {project.html}% - CSS: {project.css}% - JS: {project.js}%
+                                    HTML: {project.html}% - SCSS: {project.css}% - JS: {project.js}%
                                 </span>
                             </a>
                         </SwiperSlide>

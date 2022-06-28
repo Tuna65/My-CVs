@@ -32,9 +32,9 @@ function ReactJS() {
             js: '63',
         },
         {
-            title: 'Travel (Loading...)',
+            title: 'Travel',
             img: img3,
-            path: 'https://travel-web-a946f.web.app/',
+            path: 'https://travel-demo-six.vercel.app/',
             html: '2',
             css: '48',
             js: '50',

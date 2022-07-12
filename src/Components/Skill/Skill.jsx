@@ -15,9 +15,7 @@ function Skill() {
                 <div className="col s-left l-6 c-12">
                     <h1>My Skill</h1>
                     <h2>Certificate</h2>
-                    <span>
-                        Hoàn thành lộ trình học Front-End trên F8 gồm: HTML, CSS, Responsive, JavaScrip (ES6), ReactJS
-                    </span>
+                    <span>HTML, CSS, Responsive, JavaScrip (ES6), ReactJS, NodeJS(ExpressJS, MongoDB)</span>
                     <a href={CV} download>
                         <button className="button s-button">Download CV</button>
                     </a>
@@ -27,23 +25,23 @@ function Skill() {
                         <Card
                             emoji={glass}
                             title={'HTML, CSS, Web Responsive'}
-                            content={'Thành thạo các kỹ năng về HTML, CSS, xử lý web Responsive'}
+                            content={'Competently  HTML, CSS, SCSS web Responsive with grid system'}
                         />
                     </motion.div>
                     <motion.div initial={{ left: '0%' }} whileInView={{ left: '13%' }} transition={transition}>
                         <Card
                             emoji={heart}
                             title={'Javascripts'}
-                            content={
-                                'Thành thạo các kỹ năng về Javascripts, thao tác mảng, object, DOM, Callback, API(fetch), xử lý Website với API có sẵn'
-                            }
+                            content={'Competently Javascripts, Array, object, DOM, Callback, call API, ES6'}
                         />
                     </motion.div>
                     <motion.div initial={{ top: '80%' }} whileInView={{ top: '40%' }} transition={transition}>
                         <Card
                             emoji={humble}
                             title={'Frame Work: ReactJS'}
-                            content={'Hiểu và sử dụng tốt Router, Hooks(useState, useContext, useEffect'}
+                            content={
+                                'Use good Hooks(useState, useContext, useEffect, useReducer, useCallback, HOC(memo))'
+                            }
                         />
                     </motion.div>
                     <span className="s-blur"></span>

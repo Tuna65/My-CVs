@@ -34,7 +34,7 @@ function Contact() {
             element.current.innerText = `${text1}`;
         } else {
             if (text2) {
-                let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                let regex = /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/;
                 if (!regex.test(value)) {
                     element.current.innerText = `${text2}`;
                 }
@@ -83,7 +83,7 @@ function Contact() {
                 <div className="ct-left col l-6 c-12">
                     <h2>Get In Touch</h2>
                     <h1>Contact me</h1>
-                    <p>( Phản hồi cho tôi biết tại đây! )</p>
+                    <p>( Feedback me here!!! )</p>
                 </div>
                 <div className="col l-6 c-12">
                     <form className="ct-form" ref={form} onSubmit={sendEmail}>
